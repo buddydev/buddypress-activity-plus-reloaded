@@ -230,7 +230,7 @@ class BPAPR_Preview_Handler {
 	 * @return mixed Remote page as string, or (bool)false on failure
 	 */
 	private function get_remote_contents( $url ) {
-		$response = wp_remote_get(
+		$response = wp_safe_remote_get(
 			$url,
 			array(
 				'user-agent' => __( 'BuddyPress Activity Plus', 'bp-activity-plus-reloaded' ), // Some sites will block default WP UA.
