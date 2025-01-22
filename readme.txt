@@ -3,8 +3,10 @@ Contributors: buddydev
 Original Contributors: wpmudev
 Tags: BuddyPress, Activity Stream, BuddyPress Activity, BuddyPress Activity Upload, Embed Video, Embed Link, Upload Photo, Upload Photos, Share Media, Sharing Media, Social Media
 Requires at least: 5.0
-Tested up to: 6.4.2
-Stable tag: 1.1.1
+Tested up to: 6.7.1
+Stable tag: 1.1.2
+
+**Note:** This plugin will be discontinued by March 31st, 2025 in favor of [BuddyPress Attachment plugin](https://wordpress.org/plugins/bp-attachments/). Please migrate to the new plugin before that date.
 
 Activity Plus Reloaded for BuddyPress allows embedding of oEmbed videos and media as well as external links in your activities.
 
@@ -63,6 +65,9 @@ Yes. Until the media feature comes to BuddyPress core, we will maintain and deve
 3. Video in your activity stream screenshot-3.png
 
 == Changelog ==
+= 1.1.2 =
+- changing wp_remote_get call to use wp_safe_remote_get for better url handling( Does not have any impact in our case, just doing it to satisfy Wordfence security scan).
+
 = 1.1.1 =
 - Handled ajax response in case of failure
 
